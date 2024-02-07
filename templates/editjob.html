@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form</title>
+<style>
+    /* CSS for form */
+    form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML Form -->
+<form action="" method="post">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
+</body>
+</html>
